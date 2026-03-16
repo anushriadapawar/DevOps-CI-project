@@ -5,13 +5,13 @@ pipeline {
 
         stage('Install dependencies') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat '"C:\Users\ANUSHRI\AppData\Local\Programs\Python\Python314\Scripts\pip.exe" install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat 'pytest'
+                bat '"C:\Users\ANUSHRI\AppData\Local\Programs\Python\Python314\python.exe" -m pytest'
             }
         }
 
